@@ -23,9 +23,16 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <projet.spring.boot.version>2.0.0.RELEASE</projet.spring.boot.version>
+        <projet.jwt.version>0.9.0</projet.jwt.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <!--TOKEN AUTHENTICATION-->
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${projet.jwt.version}</version>
+        </dependency>
         <dependency>
             <!--SECURITY-->
             <groupId>org.springframework.boot</groupId>
@@ -56,13 +63,6 @@
             <version>${projet.spring.boot.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <!--TOKEN AUTHENTICATION-->
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>0.9.0</version>
-        </dependency>
-
     </dependencies>
 
     <build>
