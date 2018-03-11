@@ -23,16 +23,13 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <projet.spring.boot.version>2.0.0.RELEASE</projet.spring.boot.version>
-        <projet.jwt.version>0.9.0</projet.jwt.version>
+        <projet.spring.boot.jwt>1.0.9.RELEASE</projet.spring.boot.jwt>
+        <project.spring.boot.oauth.security>2.2.1.RELEASE</project.spring.boot.oauth.security>
+        <project.spring.security.core>5.0.3.RELEASE</project.spring.security.core>
+
     </properties>
 
     <dependencies>
-        <dependency>
-            <!--TOKEN AUTHENTICATION-->
-            <groupId>io.jsonwebtoken</groupId>
-            <artifactId>jjwt</artifactId>
-            <version>${projet.jwt.version}</version>
-        </dependency>
         <dependency>
             <!--SECURITY-->
             <groupId>org.springframework.boot</groupId>
@@ -40,6 +37,13 @@
             <version>${projet.spring.boot.version}</version>
         </dependency>
         <dependency>
+            <!--WEB APPLICATION-->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${projet.spring.boot.version}</version>
+        </dependency>
+        <dependency>
+            <!--WEB APPLICATION-->
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
             <version>${projet.spring.boot.version}</version>
@@ -62,6 +66,25 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <version>${projet.spring.boot.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <!--SECURITY-->
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+            <version>${project.spring.security.core}</version>
+        </dependency>
+        <dependency>
+            <!--SECURITY-->
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+            <version>${project.spring.boot.oauth.security}</version>
+        </dependency>
+        <dependency>
+            <!--SECURITY-->
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-jwt</artifactId>
+            <version>${projet.spring.boot.jwt}</version>
         </dependency>
     </dependencies>
 
