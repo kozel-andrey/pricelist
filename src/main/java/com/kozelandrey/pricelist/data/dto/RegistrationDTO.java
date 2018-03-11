@@ -4,10 +4,21 @@ public class RegistrationDTO {
 
     private String login;
     private String email;
+
     private String password;
+    private String passwordConfirmation;
+
     private String firstName;
     private String lastName;
     private String organizationTitle;
+
+    public String getPasswordConfirmation() {
+        return passwordConfirmation;
+    }
+
+    public void setPasswordConfirmation(String passwordConfirmation) {
+        this.passwordConfirmation = passwordConfirmation;
+    }
 
     public String getPassword() {
         return password;
