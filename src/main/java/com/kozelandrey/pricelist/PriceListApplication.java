@@ -2,11 +2,14 @@ package com.kozelandrey.pricelist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
-public class PricelistApplication {
+public class PriceListApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PricelistApplication.class, args);
+		SpringApplication.run(PriceListApplication.class, args);
 	}
+
 }

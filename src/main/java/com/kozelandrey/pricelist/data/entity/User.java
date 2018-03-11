@@ -6,20 +6,34 @@ public class User {
 
     @Id
     private String id;
-    private String login;
+
     private String email;
+    private String login;
+    private String password;
 
     private String firstName;
     private String lastName;
 
+    private Organization organization;
+
     public User() {
     }
 
-    public User(String login, String email, String firstName, String lastName) {
+    public User(Organization org, String login, String email, String firstName, String lastName, String password) {
         this.login = login;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.password = password;
+        this.organization = org;
+    }
+
+    public Organization getOrganization() {
+        return organization;
+    }
+
+    public void setOrganization(Organization organization) {
+        this.organization = organization;
     }
 
     public String getId() {

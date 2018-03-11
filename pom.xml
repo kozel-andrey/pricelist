@@ -8,8 +8,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>pricelist</name>
-	<description>Pricelist for caluculatingsum of services</description>
+	<name>Price List</name>
+	<description>Price list for calculating sum of services</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -22,16 +22,39 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+        <projet.spring.boot.version>2.0.0.RELEASE</projet.spring.boot.version>
 	</properties>
 
 	<dependencies>
+        <dependency>
+            <!--SECURITY-->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+            <version>${projet.spring.boot.version}</version>
+        </dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <!--WEB APPLICATION-->
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-rest-webmvc</artifactId>
+            <version>${projet.spring.boot.version}</version>
 		</dependency>
 		<dependency>
+            <!--MONGO DB-->
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <version>${projet.spring.boot.version}</version>
+		</dependency>
+        <dependency>
+            <!--LOCALISATION-->
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <version>${projet.spring.boot.version}</version>
+        </dependency>
+		<dependency>
+            <!--TESTS-->
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+            <version>${projet.spring.boot.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
