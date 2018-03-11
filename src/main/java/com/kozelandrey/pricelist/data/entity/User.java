@@ -28,6 +28,14 @@ public class User {
         this.organization = org;
     }
 
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public Organization getOrganization() {
         return organization;
     }

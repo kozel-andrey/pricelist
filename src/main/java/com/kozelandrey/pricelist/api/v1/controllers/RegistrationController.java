@@ -1,4 +1,4 @@
-package com.kozelandrey.pricelist.api.controllers;
+package com.kozelandrey.pricelist.api.v1.controllers;
 
 import com.kozelandrey.pricelist.data.dto.RegistrationDTO;
 import com.kozelandrey.pricelist.services.LoginService;
